@@ -1,0 +1,31 @@
+@media print {
+  body.print-certificate #appRoot { display: block !important; }
+  body.print-certificate #page-reports,
+  body.print-certificate #page-dashboard,
+  body.print-certificate #page-members,
+  body.print-certificate #page-contributions,
+  body.print-certificate #page-expenses,
+  body.print-certificate #page-investments,
+  body.print-certificate #page-audit,
+  body.print-certificate #page-calculator { display: none !important; }
+  body.print-certificate #page-certificate { display: block !important; }
+  body.print-certificate #page-certificate .page-heading-row,
+  body.print-certificate .sidebar,
+  body.print-certificate .topbar { display: none !important; }
+  body.print-certificate .page-wrap { padding: 0 !important; }
+  body.print-certificate #certificateSheet {
+    display: block !important;
+    max-width: none;
+    margin: 0;
+    padding: 45px 55px;
+    border: 0;
+    box-shadow: none;
+  }
+  body.print-certificate #authScreen { display: none !important; }
+  body.print-certificate .certificate-member select { appearance: none; }
+  body.print-certificate .certificate-ornament,
+  body.print-certificate .certificate-metrics {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+}
